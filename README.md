@@ -1,2 +1,2 @@
-# Example
-An example greeter plugin
+# Fishing Notifier
+Notifies as soon as you stop fishing
