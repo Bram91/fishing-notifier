@@ -63,10 +63,21 @@ public interface FishingNotifierConfig extends Config
 	}
 
 	@ConfigItem(
+		keyName = "harpoonFish",
+		name = "Tempoross harpoonfish",
+		description = "Notifies when idling while fishing harpoonfish.",
+		position = 4
+	)
+	default boolean harpoonFish()
+	{
+		return false;
+	}
+
+	@ConfigItem(
 		keyName = "otherFishing",
 		name = "All other Fish",
 		description = "Notifies when idling while fishing for other fish.",
-		position = 5
+		position = 6
 	)
 	default boolean otherFishing()
 	{

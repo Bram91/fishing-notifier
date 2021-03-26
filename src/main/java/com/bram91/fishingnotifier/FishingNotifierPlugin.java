@@ -11,7 +11,6 @@ import net.runelite.api.events.GameTick;
 import net.runelite.client.Notifier;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
-import net.runelite.client.game.FishingSpot;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 
@@ -105,6 +104,10 @@ public class FishingNotifierPlugin extends Plugin
 			shouldNotify = true;
 		}
 		else if(config.monkFishing() && FishingSpot.MONKFISH.getName().equals((previousTick.getName())))
+		{
+			shouldNotify = true;
+		}
+		else if(config.harpoonFish() && FishingSpot.HARPOONFISH.getName().equals((previousTick.getName())))
 		{
 			shouldNotify = true;
 		}
